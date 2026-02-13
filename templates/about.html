@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website - About</title>
-    <link rel="stylesheets" href="/static/css/about.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}"/>
 </head>
 <body>
-    <h1>Hayden Byfield</h1>
-    <p>Im a kind and honest guy, who loves anime and playing games</p>
+    <div class="container">
+        <h1>Hayden Byfield</h1>
+        <div class="text">
+            <img src="{{ url_for('static', filename='images/gaming boy.avif') }}"/>
+            <p>Im a kind and honest guy, who loves anime and playing games </p>
+        </div>
+        
+    </div>
+    
 </body>
 </html>
